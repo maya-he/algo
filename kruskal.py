@@ -34,7 +34,7 @@ def kruskal(graph):
             mst.add((weight, node1, node2))
             union(node1,node2)
             total_cost += weight
-    return mst, total_cost
+    return sorted(mst), total_cost
 
 minimum_spanning_tree, total_cost = kruskal(graph)
 
